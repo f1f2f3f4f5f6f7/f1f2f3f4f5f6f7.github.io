@@ -1,6 +1,6 @@
 export const profile = {
-  name: "Kevin Daniel Castro Mendoza",
-  shortName: "Kevin Castro",
+  name: "K. Daniel Castro Mendoza",
+  shortName: "K. Daniel Castro Mendoza",
   role: "Full Stack Developer",
   roleSecondary: "B.Sc. Systems Engineering (Student)",
   institution: "Industrial University of Santander, Colombia",

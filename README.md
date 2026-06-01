@@ -1,4 +1,4 @@
-# Kevin Castro — Portfolio
+# K. Daniel Castro Mendoza — Portfolio
 
 Personal site built with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**.
 
