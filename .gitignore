@@ -1,0 +1,17 @@
+node_modules
+dist
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+
+# Referencia personal (no se publica en el build)
+tesis.tex
+CurriculumENGInch.tex
+Logo.png
+
+# Legacy Jekyll (por si queda algo)
+_site
+.jekyll-cache
+.sass-cache
