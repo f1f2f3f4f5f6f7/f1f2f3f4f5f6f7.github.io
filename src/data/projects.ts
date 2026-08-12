@@ -20,12 +20,12 @@ export const projects: Project[] = [
     title: "Asset Management System (SAC)",
     subtitle: "School of Systems Engineering — UIS",
     description:
-      "End-to-end institutional data platform: PostgreSQL data model, REST API layer, Angular UI, and role-based access control — covering the full data lifecycle from capture to visualisation. Complements the university corporate inventory with loans, transfers, QR verification, and traceability.",
+      "Production asset-management platform built with Django REST, Angular, and PostgreSQL. It replaced manual tracking with centralised workflows, SSO/JWT authentication, role-based access control, and reliable reporting.",
     highlights: [
-      "Production deployment at sac.uis.edu.co with real institutional users",
-      "Query-optimised views and reporting dashboards aligned with BI practices",
-      "Designed for scalability and auditability across the asset lifecycle",
-      "SSO institutional auth + JWT and role-based access control",
+      "Supports 30+ concurrent users with 99% production availability",
+      "Sub-three-second response times on critical, query-optimised views",
+      "Centralised REST data flows improve reporting reliability and traceability",
+      "Institutional SSO/JWT authentication and role-based access control",
     ],
     stack: [
       "Angular",
@@ -33,8 +33,6 @@ export const projects: Project[] = [
       "PostgreSQL",
       "Docker",
       "Python",
-      "PrimeNG",
-      "MinIO",
     ],
     status: "production",
     statusLabel: "In production",
@@ -61,11 +59,11 @@ export const projects: Project[] = [
     title: "VeLoop Admin & Partners",
     subtitle: "Soluciones VeLoop S.A.S — Mobility",
     description:
-      "Admin and partner web application for rental operations with flexible weekly/monthly logic, dynamic pricing, and multi-frontend API consumption.",
+      "Vue.js and Node.js portals for mobility operations, supporting rental workflows, dynamic pricing, partner management, and versioned APIs consumed by multiple frontend clients.",
     highlights: [
-      "Vue.js + Node.js end-to-end delivery",
-      "REST APIs versioned for multiple clients",
-      "Agile coordination with outsourced dev teams",
+      "Reusable frontend and backend components",
+      "Consistent versioned APIs across releases",
+      "Agile/Scrum coordination with outsourced developers",
     ],
     stack: ["Vue.js", "Node.js", "REST APIs", "JavaScript"],
     status: "production",
@@ -78,11 +76,11 @@ export const projects: Project[] = [
     title: "Coink Fintech Platform",
     subtitle: "Coink — Backend (Freelance)",
     description:
-      "Backend work on a fintech platform for savings and transactions: high-performance REST APIs and SQL optimisation under production load.",
+      "Production backend work for savings and high-frequency financial transactions, focused on C# REST APIs, SQL optimisation, and secure external-service integrations.",
     highlights: [
-      "C# REST APIs for financial modules",
-      "SQL tuning for high-frequency operations",
-      "External financial service integrations",
+      "Production-grade C# REST APIs",
+      "SQL and database-operation tuning",
+      "Transaction integrity and security compliance",
     ],
     stack: ["C#", "SQL", "REST APIs", ".NET"],
     status: "production",
@@ -94,24 +92,28 @@ export const projects: Project[] = [
 
 export const skillGroups = [
   {
+    category: "Languages",
+    items: ["JavaScript", "TypeScript", "Python", "Java", "C#"],
+  },
+  {
     category: "Frontend",
-    items: ["Vue.js", "React", "Angular", "TypeScript", "JavaScript"],
+    items: ["Angular", "Vue.js", "React"],
   },
   {
-    category: "Backend & APIs",
-    items: ["Node.js", "Python", "Django", "Java", "C#", "PHP", "Spring Boot"],
+    category: "Backend",
+    items: ["Node.js", "Django", "Spring Boot", "REST API design"],
   },
   {
-    category: "Data & Storage",
-    items: ["PostgreSQL", "SQL", "NoSQL", "REST APIs", "Data modelling"],
+    category: "Databases",
+    items: ["PostgreSQL", "SQL", "NoSQL", "Data modelling", "Query optimisation"],
   },
   {
     category: "DevOps & Cloud",
-    items: ["Kubernetes", "Docker", "AWS", "Git"],
+    items: ["Docker", "Git", "CI/CD", "Power BI", "AWS (working knowledge)", "Kubernetes (working knowledge)"],
   },
   {
-    category: "Analytics & Interests",
-    items: ["Power BI / Fabric", "Matplotlib", "Machine Learning", "Data Engineering"],
+    category: "Methodologies",
+    items: ["Agile/Scrum", "Cross-functional collaboration"],
   },
 ] as const;
 

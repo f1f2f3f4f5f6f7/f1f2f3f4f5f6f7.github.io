@@ -3,12 +3,12 @@ import { skillGroups } from "../data/projects";
 
 export function Skills() {
   return (
-    <MotionSection>
+    <MotionSection id="habilidades">
       <Reveal>
-        <h2 className="font-display text-3xl md:text-4xl">Skills & interests</h2>
+        <h2 className="font-display text-3xl md:text-4xl">Technical skills</h2>
         <p className="mt-3 max-w-xl text-[var(--color-muted)]">
-          From the frontend to data platforms — aligned with my CV and production
-          roles.
+          Technologies used across full-stack delivery, backend development, data,
+          and production operations.
         </p>
       </Reveal>
 

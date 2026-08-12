@@ -4,36 +4,32 @@ import { projects } from "../data/projects";
 const sac = projects.find((p) => p.id === "sac");
 
 const architecture = [
-  { layer: "Client", tech: "Angular · PrimeNG · Tailwind · RxJS · QR scanning" },
-  { layer: "REST API", tech: "Django 5 · DRF · JWT (institutional IAM)" },
-  { layer: "Data", tech: "PostgreSQL 15 · Liquibase · MinIO (objects)" },
-  { layer: "Infra", tech: "Docker · Gunicorn · Ubuntu" },
+  { layer: "Client", tech: "Angular · institutional workflows · reporting views" },
+  { layer: "REST API", tech: "Django REST · SSO/JWT · role-based access control" },
+  { layer: "Data", tech: "PostgreSQL · relational modelling · optimised views" },
+  { layer: "Infrastructure", tech: "Docker · production deployment" },
 ];
 
 const modules = [
-  "Inventory & bulk import",
-  "Loans & transfers",
-  "QR verification & reporting",
-  "Full lifecycle traceability",
-  "Notifications & role-based access",
+  "Centralised asset records",
+  "Cross-module REST data flows",
+  "Operational reporting",
+  "Asset lifecycle traceability",
+  "Authentication and role-based access",
 ];
 
-const showcaseTips = [
+const caseStudy = [
   {
-    title: "Public case study",
-    body: "Document problem, architecture, and impact — no sensitive institutional data.",
+    title: "Problem",
+    body: "Manual, distributed asset tracking made reconciliation, reporting, and traceability difficult for institutional teams.",
   },
   {
-    title: "Sanitised screenshots",
-    body: "Add anonymised UI captures under public/screenshots/.",
+    title: "Solution",
+    body: "A centralised full-stack platform connected Angular workflows to versioned Django REST services and a relational PostgreSQL model.",
   },
   {
-    title: "Video walkthrough",
-    body: "5–10 min demo with test data for recruiters who cannot access UIS login.",
-  },
-  {
-    title: "Technical README repo",
-    body: "Public demo repository with diagrams; production code can stay private.",
+    title: "Impact",
+    body: "The production system supports 30+ concurrent users, maintains 99% availability, and returns critical queries in under three seconds.",
   },
 ];
 
@@ -53,8 +49,8 @@ export function ProjectDetail() {
           SAC case study
         </h2>
         <p className="mt-4 max-w-2xl text-[var(--color-muted)]">
-          Matches my UIS role and degree project — production system with
-          restricted access. Professional visibility without exposing private data.
+          A production platform delivered as part of my UIS role, replacing manual
+          asset tracking while protecting restricted institutional information.
         </p>
       </Reveal>
 
@@ -107,16 +103,16 @@ export function ProjectDetail() {
       </Reveal>
 
       <Reveal delay={3} className="mt-14">
-        <h3 className="font-display text-2xl">Showing private work to employers</h3>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
-          {showcaseTips.map((tip) => (
+        <h3 className="font-display text-2xl">From problem to production</h3>
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          {caseStudy.map((item) => (
             <div
-              key={tip.title}
+              key={item.title}
               className="rounded-2xl bg-[var(--color-accent-soft)] p-6"
             >
-              <h4 className="font-semibold">{tip.title}</h4>
+              <h4 className="font-semibold">{item.title}</h4>
               <p className="mt-2 text-sm leading-relaxed text-[var(--color-muted)]">
-                {tip.body}
+                {item.body}
               </p>
             </div>
           ))}

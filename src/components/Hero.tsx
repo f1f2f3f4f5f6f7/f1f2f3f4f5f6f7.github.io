@@ -18,16 +18,13 @@ export function Hero() {
           className="mb-6 inline-flex flex-wrap items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface-elevated)] px-4 py-1.5 text-sm text-[var(--color-muted)]"
         >
           <Sparkles size={14} className="text-[var(--color-accent)]" />
-          {profile.available && (
-            <span>
-              <span className="font-medium text-[var(--color-ink)]">
-                {profile.role}
-              </span>
-              {" · "}
-              {profile.englishLevel} English
-              {profile.openToRelocation && " · Open to relocation"}
+          <span>
+            <span className="font-medium text-[var(--color-ink)]">
+              {profile.role}
             </span>
-          )}
+            {" · "}
+            {profile.englishLevel} English
+          </span>
         </motion.div>
 
         <motion.h1

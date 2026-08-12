@@ -29,25 +29,15 @@ export function About() {
               <dd className="mt-1 text-[var(--color-muted)]">
                 {education.degree} · {education.school}
                 <br />
-                {education.period} · GPA {education.grade}
+                {education.graduation}
               </dd>
             </div>
             <div>
               <dt className="font-semibold text-[var(--color-ink)]">English</dt>
               <dd className="mt-1 text-[var(--color-muted)]">
-                {profile.englishLevel} certified
+                {profile.englishLevel}
               </dd>
             </div>
-            {profile.openToRelocation && (
-              <div>
-                <dt className="font-semibold text-[var(--color-ink)]">
-                  Relocation
-                </dt>
-                <dd className="mt-1 text-[var(--color-muted)]">
-                  Open to international opportunities
-                </dd>
-              </div>
-            )}
           </dl>
         </Reveal>
 

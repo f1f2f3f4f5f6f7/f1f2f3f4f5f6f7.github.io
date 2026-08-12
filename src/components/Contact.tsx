@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin, Phone } from "lucide-react";
 import { Reveal, MotionSection } from "./motion";
 import { profile } from "../data/profile";
 
@@ -16,8 +16,8 @@ export function Contact() {
             Let&apos;s build something together
           </h2>
           <p className="relative mx-auto mt-4 max-w-md text-zinc-400">
-            Available for full stack, backend, or data-oriented roles. Request a
-            SAC demo or discuss your opportunity.
+            Available to discuss full-stack and backend opportunities, or to
+            provide a guided SAC demonstration.
           </p>
 
           <div className="relative mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -36,6 +36,13 @@ export function Contact() {
             >
               <Linkedin size={18} />
               LinkedIn
+            </a>
+            <a
+              href={`tel:${profile.phone}`}
+              className="inline-flex items-center gap-2 rounded-full border border-zinc-600 px-6 py-3 text-sm font-semibold transition-colors hover:border-cyan-400"
+            >
+              <Phone size={18} />
+              {profile.phoneDisplay}
             </a>
             <a
               href={profile.github}

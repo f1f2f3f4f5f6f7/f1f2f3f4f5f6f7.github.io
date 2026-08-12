@@ -10,24 +10,24 @@ export const experience: Experience[] = [
   {
     id: "uis",
     role: "Full Stack Developer / Data Analyst",
-    company: "School of Systems Engineering — UIS",
+    company: "School of Systems Engineering — UIS, Bucaramanga, Colombia",
     period: "Jul 2025 – Present",
     bullets: [
-      "Designed and implemented a relational PostgreSQL schema for institutional asset traceability, ensuring data integrity and auditability across the full asset lifecycle.",
-      "Integrated REST APIs to centralise data flows across system modules, eliminating manual data reconciliation between departments.",
-      "Developed Angular-based dashboards and views for real-time data presentation, enabling non-technical stakeholders to track assets independently.",
+      "Engineered a full-stack institutional asset-management platform with Django REST, Angular, and PostgreSQL, including SSO/JWT authentication and role-based access control for 30+ concurrent users.",
+      "Deployed the platform with Docker and designed query-optimised PostgreSQL views, delivering sub-three-second response times on critical queries and 99% production availability.",
+      "Integrated REST-based data flows across modules, eliminating manual reconciliation and improving reporting reliability and traceability for non-technical stakeholders.",
     ],
   },
   {
     id: "veloop",
-    role: "Full Stack Developer",
-    company: "Soluciones VeLoop S.A.S",
+    role: "Full Stack Developer (Freelance)",
+    company: "Soluciones VeLoop S.A.S. — Mobility, Colombia",
     period: "Jul 2024 – May 2025",
     bullets: [
-      "Delivered end-to-end features for the admin and partners web app using Vue.js and Node.js, including flexible rental logic (weekly/monthly) and dynamic pricing rules.",
-      "Improved client and partner UX flows by translating business requirements into concrete technical solutions, reducing user friction.",
-      "Integrated and maintained REST APIs consumed by multiple frontends, keeping endpoints clean and versioned.",
-      "Coordinated outsourced developers within agile cycles, ensuring on-time delivery of sprint goals.",
+      "Delivered Vue.js and Node.js solutions for admin and partner-facing portals supporting rental workflows, dynamic pricing, and partner management.",
+      "Designed and maintained versioned REST APIs consumed by multiple frontend clients, improving consistency across releases.",
+      "Translated stakeholder requirements into reusable frontend and backend components for recurring platform features.",
+      "Coordinated outsourced developers within Agile/Scrum sprints and contributed to on-time delivery of planned features.",
     ],
   },
   {
@@ -36,9 +36,9 @@ export const experience: Experience[] = [
     company: "Coink (Fintech)",
     period: "Feb 2024 – May 2024",
     bullets: [
-      "Built and optimised REST APIs in C# for a fintech platform handling savings and transaction flows.",
-      "Tuned SQL queries to significantly reduce response times in high-frequency financial modules.",
-      "Integrated external financial services into the platform, maintaining data accuracy and security standards.",
+      "Developed and optimised production-grade REST APIs in C# supporting savings and high-frequency financial transaction workflows.",
+      "Tuned SQL queries and database operations and resolved backend bottlenecks in critical financial modules.",
+      "Integrated external financial services while maintaining data consistency, transaction integrity, and security compliance.",
     ],
   },
 ];

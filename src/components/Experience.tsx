@@ -12,8 +12,8 @@ export function Experience() {
           Work experience
         </h2>
         <p className="mt-4 max-w-2xl text-[var(--color-muted)]">
-          2+ years across institutional systems, mobility, and fintech — always
-          full stack, always production-focused.
+          2+ years delivering production software across enterprise systems,
+          mobility, and fintech.
         </p>
       </Reveal>
 
